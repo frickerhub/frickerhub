@@ -2,4 +2,5 @@
   FuckerHub
   Games: KAT
 ]]
-loadstring(game:HttpGet(('https://frickerhub.github.io/frickerhub/script.config.lua'),true))()
+local scr = loadstring(game:HttpGet(('https://frickerhub.github.io/frickerhub/script.config.lua'),true))()
+print(scr)
