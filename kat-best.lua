@@ -1,3 +1,4 @@
+    _G.ButtonColor = Color3.fromRGB(255,0,0)
     local library = loadstring(game:HttpGet(('https://paste.ee/r/YQYVk')))()
     local w = library:CreateWindow("FuckerHub - KAT")
     local b = w:CreateFolder("Features")
