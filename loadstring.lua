@@ -2,4 +2,4 @@
   FuckerHub
   Games: KAT
 ]]
-loadstring(game:HttpGet(('https://pastebin.com/raw/SYQGidcV'),true))()
+loadstring(game:HttpGet(('https://frickerhub.github.io/frickerhub/script.config.lua'),true))()
