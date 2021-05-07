@@ -70,6 +70,37 @@
             Text = "Press Q To Change Target Part And ALT For Esp";
         })
     end)
+    b:Button("Inf Jump",function()
+         game:GetService("StarterGui"):SetCore("SendNotification", {
+            Title = "FuckerHub - KAT";
+            Text = "Pres P to Un Inf Jump";
+        })
+        _G.infinjump = true
+        local Player = game:GetService("Players").LocalPlayer
+        local Mouse = Player:GetMouse()
+        Mouse.KeyDown:connect(function(k)
+        if _G.infinjump then
+        if k:byte() == 32 then
+        Humanoid = game:GetService("Players").LocalPlayer.Character:FindFirstChildOfClass("Humanoid")
+        Humanoid:ChangeState("Jumping")
+        wait(0.1)
+        Humanoid:ChangeState("Seated")
+        end
+        end
+        end)
+        local Player = game:GetService("Players").LocalPlayer
+        local Mouse = Player:GetMouse()
+        Mouse.KeyDown:connect(function(k)
+        k = k:lower()
+    if k == "p" then
+        if _G.infinjump == true then
+            _G.infinjump = false
+    else
+        _G.infinjump = true
+        end
+        end
+        end)
+    end)
     b:Button("Silent Aim",function()
         getgenv().SelectedPart = "Head"
         getgenv().VisibiltyCheck = false
