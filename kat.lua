@@ -1,5 +1,5 @@
     local library = loadstring(game:HttpGet(('https://paste.ee/r/YQYVk')))()
-    local w = library:CreateWindow("FuckerHub")
+    local w = library:CreateWindow("FuckerHub - KAT")
     local b = w:CreateFolder("Features")
     local s = w:CreateFolder("Settings")
     s:DestroyGUI()
@@ -62,11 +62,11 @@
     b:Button("Aimbot",function()
         loadstring(game:HttpGet("https://pastebin.com/raw/uCSJY8we", true))()
         game:GetService("StarterGui"):SetCore("SendNotification", {
-            Title = "Knife Fucker";
+            Title = "FuckerHub - KAT";
             Text = "Press Ctrl To Toggle Aimlock on and off. ";
         })
         game:GetService("StarterGui"):SetCore("SendNotification", {
-            Title = "Knife Fucker";
+            Title = "FuckerHub - KAT";
             Text = "Press Q To Change Target Part And ALT For Esp";
         })
     end)
