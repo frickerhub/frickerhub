@@ -1,12 +1,12 @@
 if KRNL_LOADED then
 game:GetService("StarterGui"):SetCore("SendNotification", {
-	Title = "FrickerHub";
+	Title = "FuckerHub";
 	Text = "Script should work fine since your using KRNL!";
 })
 end
 if syn_decompile then
 game:GetService("StarterGui"):SetCore("SendNotification", {
-	Title = "FrickerHub";
+	Title = "FuckerHub";
 	Text = "Full Support | Synapse X";
 })
 end
@@ -27,7 +27,7 @@ end
 local NotificationBindable = Instance.new("BindableFunction")
 NotificationBindable.OnInvoke = callback
 game.StarterGui:SetCore("SendNotification",  {
- Title = "FrickerHub";
+ Title = "FuckerHub";
  Text = "Since you are not using synapse , I recommend you use krnl. Would you like to copy download link?";
  Icon = "";
  Duration = 15;
@@ -38,5 +38,5 @@ game.StarterGui:SetCore("SendNotification",  {
 end
 end
 if game.PlaceId == 621129760 then --- kat
-loadstring(game:HttpGet(('https://frickerhub.github.io/frickerhub/kat.lua'),true))()
+	loadstring(game:HttpGet(('https://frickerhub.github.io/frickerhub/kat.lua'),true))()
 end
