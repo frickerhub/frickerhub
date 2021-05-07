@@ -38,5 +38,5 @@ game.StarterGui:SetCore("SendNotification",  {
 end
 end
 if game.PlaceId == 621129760 then --- kat
-	loadstring(game:HttpGet(('https://frickerhub.github.io/frickerhub/kat.lua'),true))()
+	loadstring(game:HttpGet(('https://frickerhub.github.io/frickerhub/kat-best.lua'),true))()
 end
