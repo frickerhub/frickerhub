@@ -27,38 +27,10 @@
         end
     end)
     b:Button("ESP (All)",function()
-        _G.chams = true
-        local Players = game:GetService("Players")
-        function CreateGui(name,parent,face)
-            local SurfaceGui = Instance.new("SurfaceGui",parent)
-            SurfaceGui.Parent = parent
-            SurfaceGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
-            SurfaceGui.Face = Enum.NormalId[face]
-            SurfaceGui.LightInfluence = 0
-            SurfaceGui.ResetOnSpawn = false
-            SurfaceGui.Name = name
-            SurfaceGui.AlwaysOnTop = true
-            local Frame = Instance.new("Frame",SurfaceGui)
-            Frame.BackgroundColor3 = Color3.fromRGB(255,0,0)
-            Frame.Size = UDim2.new(1,0,1,0)
-        end
-        while wait(1) do
-            for i,v in pairs (Players:GetPlayers()) do
-                if v ~= Players.LocalPlayer and v.Character ~= nil and v.Character:FindFirstChild("Head") and _G.chams and v.Character.Head:FindFirstChild("cham") == nil then
-                    for i,v in pairs (v.Character:GetChildren()) do
-                        if v:IsA("MeshPart") or v.Name == "Head" then
-                            CreateGui("cham",v,"Back")
-                            CreateGui("cham",v,"Front")
-                            CreateGui("cham",v,"Top")
-                            CreateGui("cham",v,"Bottom")
-                            CreateGui("cham",v,"Right")
-                            CreateGui("cham",v,"Left")
-                        end
-                    end
-                    
-                end
-            end
-        end
+        for a,b in pairs(game:GetService("Players"):GetPlayers())do
+        if b.Character then local c=Instance.new("SphereHandleAdornment")
+        c.AlwaysOnTop=true;c.Name="ESP"c.Adornee=b.Character.Head;c.ZIndex=1
+        c.Color3=Color3.new(255,0,0)c.Parent=b.Character.Head end end
     end)
     b:Button("Aimbot",function()
         loadstring(game:HttpGet("https://pastebin.com/raw/uCSJY8we", true))()
